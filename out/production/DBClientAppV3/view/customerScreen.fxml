@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="469.0" prefWidth="883.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerScreen">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="393.0" layoutY="14.0" prefHeight="42.0" prefWidth="96.0" text="Customers" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <TableView fx:id="tblCustomerTable" layoutX="32.0" layoutY="56.0" prefHeight="290.0" prefWidth="819.0">
+        <columns>
+          <TableColumn fx:id="columnId" prefWidth="46.39999771118164" text="Id" />
+          <TableColumn fx:id="columnName" prefWidth="216.00006866455078" text="Name" />
+            <TableColumn fx:id="columnAddress" minWidth="0.0" prefWidth="215.20001220703125" text="Address" />
+            <TableColumn fx:id="columnPhone" minWidth="0.0" prefWidth="123.19998168945312" text="Phone" />
+            <TableColumn fx:id="columnPostalCode" minWidth="0.0" prefWidth="119.199951171875" text="Postal Code" />
+            <TableColumn fx:id="columnDivision" minWidth="0.0" prefWidth="99.9998779296875" text="Division ID" />
+        </columns>
+      </TableView>
+      <Button fx:id="toAddCustomer" layoutX="169.0" layoutY="362.0" mnemonicParsing="false" onAction="#onAddCustomer" prefHeight="66.0" prefWidth="122.0" text="Add Customer" />
+      <Button layoutX="307.0" layoutY="362.0" mnemonicParsing="false" onAction="#onClick" prefHeight="66.0" prefWidth="122.0" text="Modify Customer" />
+      <Button layoutX="443.0" layoutY="362.0" mnemonicParsing="false" onAction="#onDelete" prefHeight="66.0" prefWidth="122.0" text="Delete Customer" />
+      <Line endX="22.600067138671875" endY="18.79998779296875" layoutX="556.0" layoutY="422.0" startX="22.60003662109375" startY="-67.60000610351562" />
+      <Button layoutX="590.0" layoutY="362.0" mnemonicParsing="false" onAction="#toAppointments" prefHeight="66.0" prefWidth="122.0" text="To Appointments" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerModifyScreen">
+   <children>
+      <Label alignment="CENTER_RIGHT" layoutX="190.0" layoutY="85.0" prefHeight="28.0" prefWidth="46.0" text="ID:" textAlignment="RIGHT" />
+      <Label alignment="CENTER_RIGHT" layoutX="176.0" layoutY="113.0" prefHeight="28.0" prefWidth="62.0" text="Name:" />
+      <Label alignment="CENTER_RIGHT" layoutX="166.0" layoutY="141.0" prefHeight="28.0" prefWidth="70.0" text="Address:" />
+      <Label alignment="CENTER_RIGHT" layoutX="176.0" layoutY="169.0" prefHeight="28.0" prefWidth="62.0" text="Phone:" />
+      <Label alignment="CENTER_RIGHT" layoutX="166.0" layoutY="223.0" prefHeight="28.0" prefWidth="70.0" text="Country:" />
+      <Label fx:id="lblDivision" alignment="CENTER_RIGHT" layoutX="166.0" layoutY="251.0" prefHeight="28.0" prefWidth="70.0" text="Division:" />
+      <TextField fx:id="tbId" disable="true" editable="false" layoutX="249.0" layoutY="85.0" />
+      <TextField fx:id="tbName" layoutX="249.0" layoutY="113.0" />
+      <TextField fx:id="tbAddress" layoutX="249.0" layoutY="141.0" />
+      <TextField fx:id="tbPhone" layoutX="249.0" layoutY="169.0" />
+      <TextField fx:id="tbPostalCode" layoutX="249.0" layoutY="196.0" />
+      <ComboBox fx:id="cbCountry" layoutX="248.0" layoutY="223.0" onAction="#countryBoxSelected" prefHeight="26.0" prefWidth="150.0" promptText="Select Country" visibleRowCount="3" />
+      <Button layoutX="129.0" layoutY="326.0" mnemonicParsing="false" onAction="#onSave" prefHeight="36.0" prefWidth="106.0" text="Save" />
+      <ComboBox fx:id="cbDivision" layoutX="248.0" layoutY="251.0" prefHeight="26.0" prefWidth="150.0" promptText="Select Code" visibleRowCount="8" />
+      <Button fx:id="toMain" layoutX="398.0" layoutY="326.0" mnemonicParsing="false" onAction="#goToMain" prefHeight="36.0" prefWidth="105.0" text="Return to Main" />
+      <Label alignment="CENTER" layoutX="201.0" layoutY="14.0" prefHeight="35.0" prefWidth="197.0" text="Modify Customer" textAlignment="RIGHT">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="166.0" layoutY="195.0" prefHeight="28.0" prefWidth="70.0" text="Postal Code:" />
+   </children>
+</AnchorPane>

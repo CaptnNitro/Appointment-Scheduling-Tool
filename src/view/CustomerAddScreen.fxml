@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerAddScreen">
+   <children>
+      <Label layoutX="231.0" layoutY="14.0" prefHeight="43.0" prefWidth="166.0" text="Add Customer" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="206.0" layoutY="72.0" prefHeight="28.0" prefWidth="46.0" text="ID:" textAlignment="RIGHT" />
+      <Label alignment="CENTER_RIGHT" layoutX="192.0" layoutY="100.0" prefHeight="28.0" prefWidth="62.0" text="Name:" />
+      <Label alignment="CENTER_RIGHT" layoutX="182.0" layoutY="128.0" prefHeight="28.0" prefWidth="70.0" text="Address:" />
+      <Label alignment="CENTER_RIGHT" layoutX="192.0" layoutY="156.0" prefHeight="28.0" prefWidth="62.0" text="Phone:" />
+      <Label alignment="CENTER_RIGHT" layoutX="188.0" layoutY="183.0" prefHeight="28.0" prefWidth="70.0" text="Postal Code:" />
+      <Label alignment="CENTER_RIGHT" layoutX="182.0" layoutY="210.0" prefHeight="28.0" prefWidth="70.0" text="Country:" />
+      <Label fx:id="lblDivision" alignment="CENTER_RIGHT" layoutX="182.0" layoutY="238.0" prefHeight="28.0" prefWidth="70.0" text="State:" />
+      <TextField disable="true" editable="false" layoutX="267.0" layoutY="73.0" />
+      <TextField fx:id="tbName" layoutX="267.0" layoutY="101.0" />
+      <TextField fx:id="tbAddress" layoutX="267.0" layoutY="129.0" />
+      <TextField fx:id="tbPhone" layoutX="267.0" layoutY="157.0" />
+      <TextField fx:id="tbPostalCode" layoutX="267.0" layoutY="184.0" />
+      <Button layoutX="208.0" layoutY="316.0" mnemonicParsing="false" onAction="#onAdd" prefHeight="36.0" prefWidth="106.0" text="Save" />
+      <ComboBox fx:id="cbDivision" layoutX="266.0" layoutY="239.0" prefWidth="150.0" promptText="Select Code" visibleRowCount="8" />
+      <Button fx:id="toMain" layoutX="320.0" layoutY="316.0" mnemonicParsing="false" onAction="#onClick" prefHeight="36.0" prefWidth="105.0" text="Return to Main" />
+      <ComboBox fx:id="cbCountryBox" layoutX="266.0" layoutY="211.0" onAction="#countryBoxSelected" prefWidth="150.0" promptText="Select Country" visibleRowCount="3" />
+   </children>
+</AnchorPane>
