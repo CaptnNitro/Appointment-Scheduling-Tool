@@ -4,7 +4,7 @@ Purpose:  This program allows a user to add, upadate and remove customers.  It a
 
 Author:  Matt Stine
 
-Contact:  mstine13@wgu.edu
+Contact:  matt.b.stine@gmail.com
 
 Application Version: 1.0
 
